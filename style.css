@@ -1,0 +1,85 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 0.9em;
+}
+
+p, h2, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+h2 {
+    font-size: 0.8em;
+}
+
+section {
+    background-color: white;
+    border-radius: 0px 0px 8px 8px;
+    width: 80%;
+}
+
+.info {
+    padding: 7%;
+}
+
+.img_parfum {
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}
+.price_entire {
+    text-decoration: line-through;
+    padding-left: 10%;
+}
+
+h1, .price_reduce {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 2em;
+}
+.price_reduce {
+    color: hsl(158, 36%, 37%);
+    margin: 0%;
+}
+h1 {
+    color: black;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    width: 100%;
+    height: 4em;
+    border-radius: 10px;
+    border: none;
+    margin-top: 3%;
+}
+button:hover {
+    background-color: hsl(158, 42%, 18%);
+}
+
+@media screen and (min-width: 769px) {
+    body {
+height: 100vh;
+    }
+    .img_parfum {
+        width: 60%;
+    }
+    section {
+        width: 50em;
+        display: flex;
+        border-radius: 0px 8px 8px 0px;
+    }
+    .img_parfum {
+        background-size: contain;
+    border-radius: 8px 0px 0px 8px;
+}
+}
